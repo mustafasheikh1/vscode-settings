@@ -27,3 +27,20 @@
         return await User.get({ where: { _id: $id } });
     }
 ```
+
+### Directories
+- A folder must be in `kebab-case`. example: `common-components`.
+- Use `@` prefix with the root level folders under src directory. example:
+```
+src/
+ │－ @services
+ │－ @components
+ │－ @pages
+
+```
+### Filenames
+- Just like a folder name a filename must also be in `kebab-case`. 
+- Filename should be postfixed by the type of the file. example: `loading-spinner.component.js`, `utils.test.js`.
+
+### Export Methods
+- Always use centralized exports.
